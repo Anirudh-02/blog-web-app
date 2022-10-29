@@ -1,0 +1,49 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+}
+
+.new-post-interface {
+    visibility: hidden;
+    height: 0;
+}
+
+#footer {
+    margin-top: auto;
+    width: 100%;
+    color: white;
+    background-color: #212529;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#navbar {
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
+}
+
+.mainContent {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    min-height: 50vh;
+}
+
+body {
+    background-color: #333;
+}

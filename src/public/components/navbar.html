@@ -1,0 +1,29 @@
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="pointer-events: none;">Social</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a data-component="viewAllPosts" class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a data-component="myPosts" class="nav-link" href="#">My Posts</a>
+          </li>
+          <li class="nav-item">
+            <a data-component="createPost" class="nav-link" href="#">Create Post</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2 d-flex align-items-center">
+            <span class="nav-username text-primary" style="color: white;">Username</span>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-danger" id="logout">Log out</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

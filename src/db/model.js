@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 
 const db = new Sequelize('socialdb', 'socialuser', 'socialpass', {
-    host: 'localhost',
+    host: '0.0.0.0',
     dialect: 'mysql'
 })
 

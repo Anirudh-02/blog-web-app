@@ -1,9 +1,14 @@
 const Sequelize = require('sequelize')
+let db
 
-const db = new Sequelize('socialdb', 'socialuser', 'socialpass', {
-    host: '0.0.0.0',
-    dialect: 'mysql'
-})
+if (process.env.MYSQL_URL) {
+   db = new Sequelize(process.env.MYSQL_URL)
+} else {
+    db = new Sequelize('socialdb', 'socialuser', 'socialpass', {
+        host: 'localhost',
+        dialect: 'mysql'
+    })
+}
 
 const COL_ID_DEF = {
     type: Sequelize.DataTypes.INTEGER,
